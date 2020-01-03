@@ -140,7 +140,7 @@ namespace AM.API
                 opt.SwaggerEndpoint("/swagger/v1/swagger.json", "Assets Management API");
             });
 
-            //app.UseAuthentication();
+            app.UseAuthentication();
 
             app.UseMvc();
         }

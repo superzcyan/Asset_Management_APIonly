@@ -54,7 +54,7 @@ namespace AM.API.Helpers
         {
 
             #region Model
-            var modelMinRequiredRecord = 1000;
+            var modelMinRequiredRecord = 1;
             var modelId = 0;
             var modelService = new ModelService(context);
 
@@ -79,7 +79,7 @@ namespace AM.API.Helpers
             #endregion
 
             #region Category
-            var categoryMinRequiredRecord = 1000;
+            var categoryMinRequiredRecord = 1;
             if (context.Categories.LongCount() <= categoryMinRequiredRecord)
             {
                 var categoryService = new CategoryService(context);
@@ -97,7 +97,7 @@ namespace AM.API.Helpers
             #endregion
 
             #region Manufacturer
-            var manufacturerMinRequiredRecord = 1000;
+            var manufacturerMinRequiredRecord = 1;
             if (context.Manufacturers.LongCount() <= manufacturerMinRequiredRecord)
             {
                 var manufacturerService = new ManufacturerService(context);
@@ -115,7 +115,7 @@ namespace AM.API.Helpers
             #endregion
 
             #region Processor
-            var processorMinRequiredRecord = 1000;
+            var processorMinRequiredRecord = 1;
             if (context.Processors.LongCount() <= processorMinRequiredRecord)
             {
                 var processorService = new ProcessorService(context);
@@ -134,7 +134,7 @@ namespace AM.API.Helpers
 
             #region Size
 
-            var hardDiskMinRequiredRecord = 1000;
+            var hardDiskMinRequiredRecord = 1;
             if (context.HardDiskSizes.LongCount() <= hardDiskMinRequiredRecord)
             {
                 var hdService = new HardDiskSizeService(context);
@@ -150,7 +150,7 @@ namespace AM.API.Helpers
                 }
             }
 
-            var memoryMinRequiredRecord = 1000;
+            var memoryMinRequiredRecord = 1;
             if (context.MemorySizes.LongCount() <= memoryMinRequiredRecord)
             {
                 var ramService = new MemorySizeService(context);
@@ -166,7 +166,7 @@ namespace AM.API.Helpers
                 }
             }
 
-            var videoCardMinRequiredRecord = 1000;
+            var videoCardMinRequiredRecord = 1;
             if (context.VideoCardSizes.LongCount() <= videoCardMinRequiredRecord)
             {
                 var vcService = new VideoCardSizeService(context);
@@ -185,7 +185,7 @@ namespace AM.API.Helpers
             #endregion
 
             #region Supplier
-            var supplierMinRequiredRecord = 1000;
+            var supplierMinRequiredRecord = 1;
             if (context.Suppliers.LongCount() <= supplierMinRequiredRecord)
             {
                 var supplierService = new SupplierService(context);
@@ -203,7 +203,7 @@ namespace AM.API.Helpers
             #endregion
 
             #region User
-            var userMinRequiredRecord = 1000;
+            var userMinRequiredRecord = 1;
             if (context.Users.LongCount() <= userMinRequiredRecord)
             {
                 var userService = new UserService(context);
@@ -222,7 +222,7 @@ namespace AM.API.Helpers
             #endregion
 
             #region Asset
-            var assetMinRequiredRecord = 5000;
+            var assetMinRequiredRecord = 1;
             if (context.Assets.LongCount() <= assetMinRequiredRecord)
             {
                 var service = new AssetService(context);
